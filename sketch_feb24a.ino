@@ -7,6 +7,24 @@ int OS;
 float avg;
 int n=1;
 
+/*Description of Functions
+
+PWM_Time_Check(int x, float y, float z)
+     -sets the frequency and PWM for one relay
+     -only use one function at a time
+     -x is the pin used
+     -y is the frequency
+     -z is the duty cycle
+PWM_2(int Amp, int OS, float y, float z)
+     -sets the amplitude, and offset, frequency and PWM for one relay
+     -only use one function at a time
+     -Amp is the amplitude
+     -OS is the offset
+     -y is the frequency
+     -z is the duty cycle
+
+*/
+
 void setup() {
   pinMode(in1, OUTPUT);
   pinMode(7, OUTPUT);
@@ -165,15 +183,6 @@ void PWM_2(int Amp, int OS, float y, float z){
           delay(T_on);
       }
 }
-
-
-
-
-
-
-
-
-
 
 
 
